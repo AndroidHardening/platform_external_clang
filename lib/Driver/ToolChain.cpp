@@ -705,7 +705,7 @@ SanitizerMask ToolChain::getSupportedSanitizers() const {
   using namespace SanitizerKind;
   SanitizerMask Res = (Undefined & ~Vptr & ~Function) | (CFI & ~CFIICall) |
                       CFICastStrict | UnsignedIntegerOverflow | Nullability |
-                      LocalBounds;
+                      LocalBounds | LocalInit;
   if (getTriple().getArch() == llvm::Triple::x86 ||
       getTriple().getArch() == llvm::Triple::x86_64 ||
       getTriple().getArch() == llvm::Triple::arm ||

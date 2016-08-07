@@ -126,6 +126,9 @@ SANITIZER("efficiency-working-set", EfficiencyWorkingSet)
 SANITIZER_GROUP("efficiency-all", Efficiency,
                 EfficiencyCacheFrag | EfficiencyWorkingSet)
 
+// Local Init
+SANITIZER("local-init", LocalInit)
+
 // Magic group, containing all sanitizers. For example, "-fno-sanitize=all"
 // can be used to disable all the sanitizers.
 SANITIZER_GROUP("all", All, ~0ULL)
