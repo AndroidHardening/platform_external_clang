@@ -6,7 +6,7 @@
 #else
 #define CLANG_CONFIG_H
 
-#define CLANG_VENDOR "Android "
+#define CLANG_VENDOR "HardenedOS "
 
 /* Bug report URL. */
 #define BUG_REPORT_URL "http://llvm.org/bugs/"
